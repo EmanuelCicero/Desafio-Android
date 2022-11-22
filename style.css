@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+li{
+    display: flex   ;
+}
+
+ul > li::before{
+    content: '✔';   
+}
+
+
+
