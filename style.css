@@ -28,7 +28,7 @@ header{
 
 main {
     background-color: white;
-    min-width: 320px;
+    min-width: 300px;
     max-width: 800px;
     margin: auto;
     margin-bottom: 20px;
@@ -45,6 +45,7 @@ h1  {
     font-size: 1.7em;
     color: #195a36;
     font-weight: 500;
+    text-align: center;
     
 }
 
@@ -61,6 +62,7 @@ h2{
     color: white;
     font-size: 3em;   
     text-align: center;
+    
 }
 
 .titulo{
@@ -77,27 +79,22 @@ h2{
 
 p{
     text-indent: 30px;
+    line-height: 1.8em;
 }
 
-li{
-    display: flex   ;
-}
-
-ul > li::before{
+/* ul > li::before{
     content: '✔';   
-}
+} */
 
 .videoy{
-    background-color: #195a36;
-    margin: 0;
-    padding: 37px;
+
 }
 
 iframe{
-    margin: 0;
+    display: block;
     width: 100%;
     margin-top: 10px;
-    max-width: 100%;
+    max-width: 800px;
     min-width: 320px;
     margin: auto;
 
@@ -106,13 +103,14 @@ iframe{
 nav > a{
     color: white;
     text-decoration: none;
-    margin-right: 20px;   
+    margin-right: 20px; 
 }
 
 a:hover{
     background-color: #164e2f;
     margin: 5px;
     padding: 10px;
+    border: 10px;
     border-radius: 5px;
     color: #3cd983;
     
@@ -128,12 +126,13 @@ footer , .rodape{
 }
 
 .backfim{
-    background-color: #3cd983;
+    background-color: #2aa863;
     height: 50px;
     color: white;
     margin-bottom: 0;
     border-radius:  20px 20px 0 0;  
     margin-top: 30px;
+
 }
 
 h3{
@@ -143,6 +142,7 @@ h3{
 .lista {
     background-color: #45fc97a4;
     border-radius: 0 0 20px 20px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.247);
     
     
 }
@@ -174,11 +174,25 @@ h3{
 }
 
 .pandroid{
-    text-align: center;
+    display: block;
     width: 100%;
-    
+    margin: auto;
+
 }
 
 aside{
     text-indent: 30px;
+}
+
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 50%;
 }
